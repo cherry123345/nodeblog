@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongo = require('mongodb');
-var db = require('monk')('localhost/nodeblog');
+var db = require('monk')('mongodb+srv://taskapp:*****@cluster0.4gkwg.mongodb.net/?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=true/nodeblog');
 
 router.get('/show/:category', function(req, res, next) {
 	var posts = db.get('posts');
