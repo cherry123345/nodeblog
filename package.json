@@ -20,6 +20,7 @@
     "monk": "git+https://github.com/vccabral/monk.git",
     "morgan": "~1.6.1",
     "multer": "*",
+    "node": "^16.4.0",
     "serve-favicon": "~2.3.0"
   },
   "main": "app.js",
