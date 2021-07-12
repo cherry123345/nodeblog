@@ -3,7 +3,7 @@ var router = express.Router();
 var multer = require('multer');
 var upload = multer({ dest: './public/images' })
 var mongo = require('mongodb');
-var db = require('monk')('mongodb+srv://taskapp:taskapp@cluster0.4gkwg.mongodb.net/?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=true/nodeblog');
+var db = require('monk')('mongodb+srv://taskapp:taskapp@cluster0.4gkwg.mongodb.net/nodeblog?retryWrites=true&w=majority');
 
 router.get('/show/:id', function(req, res, next) {
 	var posts = db.get('posts');
