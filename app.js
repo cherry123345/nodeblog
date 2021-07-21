@@ -10,7 +10,7 @@ var upload = multer({ dest: 'uploads/' })
 var expressValidator = require('express-validator');
 
 var mongo = require('mongodb');
-var db = require('monk')('mongodb+srv://taskapp:taskapp@cluster0.4gkwg.mongodb.net/nodeblog?retryWrites=true&w=majority');
+var db = require('monk')('mongodb+srv://taskapp:Callme@10@cluster0.4gkwg.mongodb.net/nodeblog?retryWrites=true&w=majority');
 
 var routes = require('./routes/index');
 var posts = require('./routes/posts');

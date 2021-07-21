@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var mongo = require('mongodb');
-var db = require('monk')('mongodb+srv://taskapp:taskapp@cluster0.4gkwg.mongodb.net/nodeblog?retryWrites=true&w=majority');
+var db = require('monk')('mongodb+srv://taskapp:Callme@10@cluster0.4gkwg.mongodb.net/nodeblog?retryWrites=true&w=majority');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
